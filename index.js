@@ -41,8 +41,20 @@ function galleryUI() {
 		item.classList.add('byebye');
 		if (item.complete) {
 			console.log(item.src);
+			var altura = getVal(gallery, 'grid-auto-rows');
+			var gap = getVal(gallery, 'grid-row-gap');
+			var gitem = item.parentElement.parentElement;
+			gitem.style.gridRowEnd =
+				'span ' + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+			item.classList.remove('byebye');
+			if (item.clientHeight > item.clientWidth + 50) {
+				item.classList.add('portrait');
+			} else {
+				item.classList.add('landscape');
+			}
 		} else {
 			item.addEventListener('load', function () {
+				console.log(true);
 				var altura = getVal(gallery, 'grid-auto-rows');
 				var gap = getVal(gallery, 'grid-row-gap');
 				var gitem = item.parentElement.parentElement;
