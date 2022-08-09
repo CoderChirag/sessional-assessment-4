@@ -1,3 +1,22 @@
+const fetchData = () => {
+	return (promise = new Promise((resolve, reject) => {
+		const xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				resolve(JSON.parse(this.responseText));
+			}
+			if (this.readyState === 4 && this.status !== 200) {
+				reject(this.status);
+			}
+		};
+		xhttp.open(
+			'GET',
+			'https://jsonplaceholder.typicode.com/photos?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09',
+			true
+		);
+		xhttp.send();
+	}));
+};
 // fetchImagesAndShow = async () => {
 // 	let galleryContainer = document.getElementById('gallery');
 
