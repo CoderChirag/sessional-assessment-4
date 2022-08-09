@@ -139,6 +139,43 @@ h6 {
 	line-height: 1.1;
 }
 
+main {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 1600px;
+	min-height: 100vh;
+	padding: 200px 150px;
+}
+main.fillHeight {
+	padding: 0px 150px;
+}
+.main {
+	counter-reset: section 0;
+}
+
+.hidden {
+	visibility: hidden !important;
+}
+.d-none {
+	display: none !important;
+}
+
+#footer-text {
+	width: 100%;
+	position: absolute;
+	bottom: unset !important;
+	text-align: center;
+	font-size: var(--fz-md);
+	/* margin-bottom: 5px; */
+	background-color: var(--dark-navy);
+	color: var(--lightest-slate);
+	padding: 15px;
+	z-index: 0;
+}
+#footer-text a {
+	cursor: pointer;
+}
+
 #spinner-loader-wrapper {
 	height: 98%;
 	background-color: unset;
