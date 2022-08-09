@@ -1,7 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+:root {
+	--dark-navy: #020c1b;
+	--navy: #0a192f;
+	--light-navy: #112240;
+	--lightest-navy: #233554;
+	--navy-shadow: rgba(2, 12, 27, 0.7);
+	--dark-slate: #495670;
+	--slate: #8892b0;
+	--light-slate: #a8b2d1;
+	--lightest-slate: #ccd6f6;
+	--white: #e6f1ff;
+	--green: #64ffda;
+	--green-tint: rgba(100, 255, 218, 0.1);
+	/*---------- Dark Theme ---------------  */
+	--primary: var(--navy);
+	--dark-primary: var(--dark-navy);
+	--light-primary: var(--light-navy);
+	--secondary: var(--navy);
+	--tertiary: var(--lightest-navy);
+
+	--color-primary: var(--slate);
+	--color-secondary: var(--lightest-slate);
+	--color-tertiary: var(--light-slate);
+	--color-bold: var(--green);
+	--color-input-error: #fff30e;
+
+	--outline-btn: 1px solid var(--green);
+	--outline-btn-bg: transparent;
+	--outline-btn-color: var(--green);
+
+	--filled-btn-bg: var(--green);
+	--filled-btn-color: var(--light-navy);
+
+	--list-color: var(--green);
+
+	--side--bar-color: var(--light-slate);
+
+	--font-sans: 'Montserrat', sans-serif;
+	--font-mono: 'Montserrat', sans-serif;
+	--fz-xxs: 12px;
+	--fz-xs: 13px;
+	--fz-sm: 14px;
+	--fz-md: 16px;
+	--fz-lg: 18px;
+	--fz-xl: 20px;
+	--fz-xxl: 22px;
+	--fz-heading: 32px;
+	--border-radius: 4px;
+	--nav-height: 100px;
+	--nav-scroll-height: 70px;
+	--tab-height: 42px;
+	--tab-width: 120px;
+	--easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+	--transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	--hamburger-width: 30px;
+	--ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+	--ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+	--ham-after: bottom 0.1s ease-in 0.25s,
+		transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	--ham-after-active: bottom 0.1s ease-out,
+		transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+
+	--card-height: 40vw;
+	--card-margin: 4vw;
+	--card-top-offset: 1em;
+	--numcards: 4;
+	--outline-width: 0px;
+}
+* {
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: var(--dark-slate) var(--navy);
+	font-family: var(--font-sans);
+	transition: background-color 0.5s ease, color 0.1s ease;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+::selection {
+	background-color: var(--lightest-navy);
+	color: var(--lightest-slate);
+}
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--dark-slate);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+	background: var(--navy);
+}
+body {
+	margin: 0px;
+	width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-font-smoothing: antialiased;
+	background-color: var(--navy);
+	color: var(--lightest-slate);
+	font-family: var(--font-sans);
+	font-size: var(--fz-xl);
+	line-height: 1.3;
+	/* height: 500vh; */
+	-webkit-user-select: none;
+	user-select: none;
+	position: relative;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
 section {
+	margin: 0px auto;
+	padding: 100px 0px;
+	max-width: 1000px;
 	min-height: 95vh;
 }
+section:focus,
+main:focus,
+div:focus {
+	outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0px 0px 10px;
+	font-weight: 600;
+	color: var(--color-secondary);
+	line-height: 1.1;
+}
+
 #spinner-loader-wrapper {
 	height: 98%;
 	background-color: unset;
