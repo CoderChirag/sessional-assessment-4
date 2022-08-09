@@ -6,7 +6,7 @@ const fetchData = () => {
 				resolve(JSON.parse(this.responseText));
 			}
 			if (this.readyState === 4 && this.status !== 200) {
-				reject(this.status);
+				reject({ status: this.status });
 			}
 		};
 		xhttp.open(
@@ -17,27 +17,33 @@ const fetchData = () => {
 		xhttp.send();
 	}));
 };
-// fetchImagesAndShow = async () => {
-// 	let galleryContainer = document.getElementById('gallery');
+showImages = async () => {
+	try {
+		let galleryData = await fetchData();
+		galleryData = galleryData.filter((item, index) => index < 10);
+		let galleryContainer = document.getElementById('gallery');
 
-// 	let ind = 0;
-// 	setTimeout(() => {
-// 		for (const data of galleryData) {
-// 			if (ind === 0) {
-// 				galleryContainer.innerHTML = '';
-// 			}
-// 			galleryContainer.innerHTML += `
-// 			    <div class="gallery-item">
-// 			        <span class="material-icons-outlined close hidden">close</span>
-// 			        <div class="content"><img src="${data.url}"></div>
-// 			    </div>
-// 			`;
-// 			ind++;
-// 		}
+		let ind = 0;
+		setTimeout(() => {
+			for (const data of galleryData) {
+				if (ind === 0) {
+					galleryContainer.innerHTML = '';
+				}
+				galleryContainer.innerHTML += `
+			    <div class="gallery-item">
+			        <span class="material-icons-outlined close hidden">close</span>
+			        <div class="content"><img src="${data.url}"></div>
+			    </div>
+			`;
+				ind++;
+			}
 
-// 		galleryUI();
-// 	}, 200);
-// };
+			galleryUI();
+		}, 200);
+	} catch (err) {
+		console.log(`Error, Status Code: ${err.status}`);
+	}
+};
 
 function galleryUI() {
 	var gallery = document.querySelector('#gallery');
@@ -103,4 +109,5 @@ function galleryUI() {
 	}
 }
 
-galleryUI();
+// galleryUI();
+showImages();
