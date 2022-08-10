@@ -1,5 +1,15 @@
+const shuffleArray = array => {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		const temp = array[i];
+		array[i] = array[j];
+		array[j] = temp;
+	}
+	return array;
+};
+
 const fetchData = () => {
-	return (promise = new Promise((resolve, reject) => {
+	return new Promise((resolve, reject) => {
 		const xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
@@ -15,16 +25,34 @@ const fetchData = () => {
 			true
 		);
 		xhttp.send();
-	}));
+	});
 };
+
+const fetchUIData = () => {
+	console.log(true);
+	return new Promise((resolve, reject) => {
+		fetchData()
+			.then(data => {
+				console.log('c');
+				data = shuffleArray(data);
+				console.log('d');
+				resolve(data);
+			})
+			.catch(err => reject(err));
+	});
+};
+
 showImages = async () => {
 	try {
-		let galleryData = await fetchData();
+		let galleryData = await fetchUIData();
+		console.log('b');
+		// galleryData = shuffleArray(galleryData);
 		galleryData = galleryData.filter((item, index) => index < 10);
 		let galleryContainer = document.getElementById('gallery');
 
 		let ind = 0;
 		setTimeout(() => {
+			console.log('a');
 			for (const data of galleryData) {
 				if (ind === 0) {
 					galleryContainer.innerHTML = '';
@@ -44,7 +72,7 @@ showImages = async () => {
 			}
 
 			galleryUI();
-		}, 1500);
+		}, 1000);
 	} catch (err) {
 		console.log(`Error, Status Code: ${err.status}`);
 	}
