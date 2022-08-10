@@ -122,6 +122,26 @@ body,
 	height: 100px;
 	background-color: #ea5e10;
 }
+/* ------------- Footer Section ------------- */
+.separator {
+	background-color: #434343;
+}
+.footer-16371 .footer-site-logo a {
+	color: #ea5e10;
+}
+.footer-16371 .nav-links li a {
+	color: #434343;
+	cursor: pointer;
+}
+.footer-16371 .nav-links li a:hover {
+	color: #ea5e10;
+}
+.footer-16371 .social h3 {
+	color: #ea5e10;
+}
+.footer-16371 .copyright {
+	color: #2e2e2e;
+}
 
 @media (max-width: 768px) {
 	/* ---------------- Side Menu ------------------ */

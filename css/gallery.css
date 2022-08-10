@@ -2,22 +2,6 @@
 #events-gallery {
 	margin-top: 80px;
 }
-#footer-text {
-	width: 100%;
-	position: absolute;
-	bottom: unset !important;
-	text-align: center;
-	font-size: var(--fz-md);
-	/* margin-bottom: 5px; */
-	background-color: var(--dark-navy);
-	color: var(--lightest-slate);
-	padding: 15px;
-	z-index: 0;
-}
-#footer-text a {
-	cursor: pointer;
-}
-
 #spinner-loader-wrapper {
 	height: 98%;
 	background-color: unset;
@@ -173,19 +157,6 @@
 	}
 }
 @media (max-width: 480px) {
-	#footer-mobile {
-		background-color: #f5d1bd;
-		padding: 10px;
-		margin-bottom: 0;
-	}
-	#footer-text.short-form {
-		margin-top: -50px;
-		bottom: 10px;
-	}
-	#footer-text.team {
-		margin-top: 0px !important;
-		bottom: 2px;
-	}
 	#gallery {
 		padding: 0 30px;
 	}
