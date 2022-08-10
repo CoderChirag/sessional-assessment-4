@@ -33,6 +33,11 @@ showImages = async () => {
 			    <div class="gallery-item">
 			        <span class="material-icons-outlined close hidden">close</span>
 			        <div class="content"><img src="${data.url}"></div>
+                    <p class="img_title">${
+						data.title.length > 10
+							? `${data.title.substring(0, 10).trim()}..`
+							: data.title.length
+					}</p>
 			    </div>
 			`;
 				ind++;
@@ -58,8 +63,9 @@ function galleryUI() {
 		var gap = getVal(gallery, 'grid-row-gap');
 		gallery.querySelectorAll('.gallery-item').forEach(function (item) {
 			var el = item;
-			el.style.gridRowEnd =
-				'span ' + Math.ceil((getHeight(item) + gap) / (altura + gap));
+			el.style.gridRowEnd = `span ${
+				Math.ceil((getHeight(item) + gap) / (altura + gap)) + 4
+			}`;
 		});
 	};
 	gallery.querySelectorAll('img').forEach(function (item) {
@@ -69,8 +75,9 @@ function galleryUI() {
 			var altura = getVal(gallery, 'grid-auto-rows');
 			var gap = getVal(gallery, 'grid-row-gap');
 			var gitem = item.parentElement.parentElement;
-			gitem.style.gridRowEnd =
-				'span ' + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+			gitem.style.gridRowEnd = `span ${
+				Math.ceil((getHeight(gitem) + gap) / (altura + gap)) + 4
+			}`;
 			item.classList.remove('byebye');
 			if (item.clientHeight > item.clientWidth + 50) {
 				item.classList.add('portrait');
@@ -83,9 +90,9 @@ function galleryUI() {
 				var altura = getVal(gallery, 'grid-auto-rows');
 				var gap = getVal(gallery, 'grid-row-gap');
 				var gitem = item.parentElement.parentElement;
-				gitem.style.gridRowEnd =
-					'span ' +
-					Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+				gitem.style.gridRowEnd = `span ${
+					Math.ceil((getHeight(gitem) + gap) / (altura + gap)) + 4
+				}`;
 				item.classList.remove('byebye');
 				if (item.clientHeight > item.clientWidth + 50) {
 					item.classList.add('portrait');
