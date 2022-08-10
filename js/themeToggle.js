@@ -54,7 +54,7 @@ function toggleTheme(svg) {
 	}
 	if (lightThemeStylesheet.disabled) {
 		// dark -> light
-		localStorage.removeItem('theme');
+		localStorage.setItem('theme', 'light');
 		svg.setAttribute('color', '#ea5e10');
 		svg.children[1].setAttribute('fill', '#ea5e10');
 		svg.setAttribute('width', '40');

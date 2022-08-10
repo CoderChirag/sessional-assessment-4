@@ -11,7 +11,8 @@ function toggleMenubar(e) {
 		asideMenu.setAttribute('tabindex', '1');
 
 		document.querySelector('body').classList.add('blur');
-		document.querySelector('.nav .logo').style.filter = 'blur(2px)';
+		document.querySelectorAll('.nav .logo')[0].style.filter = 'blur(2px)';
+		document.querySelectorAll('.nav .logo')[1].style.filter = 'blur(2px)';
 		document.querySelector(
 			'.nav .nav-logos span.material-icons-outlined'
 		).style.filter = 'blur(2px)';
@@ -27,7 +28,8 @@ function toggleMenubar(e) {
 		asideMenu.setAttribute('tabindex', '-1');
 
 		document.querySelector('body').classList.remove('blur');
-		document.querySelector('.nav .logo').style.filter = null;
+		document.querySelectorAll('.nav .logo')[0].style.filter = null;
+		document.querySelectorAll('.nav .logo')[1].style.filter = null;
 		document.querySelector(
 			'.nav .nav-logos span.material-icons-outlined'
 		).style.filter = null;

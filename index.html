@@ -15,11 +15,14 @@
 	<link rel="stylesheet" href="./css/root.css">
 	<link rel="stylesheet" href="./css/loader.css">
 	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/sidebars.css">
 	<link rel="stylesheet" href="./css/gallery.css">
 	<link rel="stylesheet" href="./css/keyframes.css">
 	
 	<script>
-	window.localStorage.setItem( 'theme', 'dark' )
+	if ( !window.localStorage.getItem( 'theme' ) ) {
+		window.localStorage.setItem( 'theme', 'dark' )
+	}
 	</script>
 	<title>Document</title>
 </head>
@@ -36,7 +39,7 @@
 					</div>
 					<span class="material-icons-outlined" style="margin-right: 10px;">close</span>
 					<div class="logo fade-enter-done" tabindex="-1">
-						<a href="https://www.ieindia.org/webui/iei-home.aspx" aria-label="home">
+						<a href="https://www.coderchirag.tech" aria-label="home">
 							</svg>
 						</a>
 					</div>
@@ -143,6 +146,48 @@
 				</div>
 			</nav>
 		</header>
+		<!----------------------------------- Right and Left Bars -------------------------------------->
+		<div orientation="left" class="left-bar visible slide-up animation-delay delay-1pt5">
+			<ul class="left-bar-ol fade-enter-done">
+				<li>
+					<a href="http://www.coderchirag.tech" aria-label="GitHub" target="_blank" rel="noreferrer">
+						<svg role="img" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-website" viewBox="0 0 20 20" style="transform: scale(1.4);">
+							<path fill="none" d="M10,2.531c-4.125,0-7.469,3.344-7.469,7.469c0,4.125,3.344,7.469,7.469,7.469c4.125,0,7.469-3.344,7.469-7.469C17.469,5.875,14.125,2.531,10,2.531 M10,3.776c1.48,0,2.84,0.519,3.908,1.384c-1.009,0.811-2.111,1.512-3.298,2.066C9.914,6.072,9.077,5.017,8.14,4.059C8.728,3.876,9.352,3.776,10,3.776 M6.903,4.606c0.962,0.93,1.82,1.969,2.53,3.112C7.707,8.364,5.849,8.734,3.902,8.75C4.264,6.976,5.382,5.481,6.903,4.606 M3.776,10c2.219,0,4.338-0.418,6.29-1.175c0.209,0.404,0.405,0.813,0.579,1.236c-2.147,0.805-3.953,2.294-5.177,4.195C4.421,13.143,3.776,11.648,3.776,10 M10,16.224c-1.337,0-2.572-0.426-3.586-1.143c1.079-1.748,2.709-3.119,4.659-3.853c0.483,1.488,0.755,3.071,0.784,4.714C11.271,16.125,10.646,16.224,10,16.224 M13.075,15.407c-0.072-1.577-0.342-3.103-0.806-4.542c0.673-0.154,1.369-0.243,2.087-0.243c0.621,0,1.22,0.085,1.807,0.203C15.902,12.791,14.728,14.465,13.075,15.407 M14.356,9.378c-0.868,0-1.708,0.116-2.515,0.313c-0.188-0.464-0.396-0.917-0.621-1.359c1.294-0.612,2.492-1.387,3.587-2.284c0.798,0.97,1.302,2.187,1.395,3.517C15.602,9.455,14.99,9.378,14.356,9.378"></path>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/coderchirag" aria-label="GitHub" target="_blank" rel="noreferrer">
+						<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+							<title>GitHub</title>
+							<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+							</path>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/chirag__jain.exe" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+							<title>Instagram</title>
+							<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16
+                                    11.37z"></path>
+							<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+						</svg></a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/coderchirag/" aria-label="Linkedin" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+							<title>LinkedIn</title>
+							<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2
+                                    0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+							<rect x="2" y="9" width="4" height="12"></rect>
+							<circle cx="4" cy="4" r="2"></circle>
+						</svg></a>
+				</li>
+			</ul>
+		</div>
+		<div orientation="right" class="right-bar visible slide-up animation-delay delay-1pt5">
+			<div class="email__StyledLinkWrapper-sc-2epoq-0 right-bar-div fade-enter-done"><a href="mailto:chirag0174.be20@chitkara.edu.in">chirag0174.be20@chitkara.edu.in</a></div>
+		</div>
 		<div id="content">
 			
 			<section id="events-gallery">
