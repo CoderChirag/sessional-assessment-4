@@ -72,7 +72,7 @@ showImages = async () => {
 			}
 
 			galleryUI();
-		}, 1000);
+		}, 500);
 	} catch (err) {
 		console.log(`Error, Status Code: ${err.status}`);
 	}
