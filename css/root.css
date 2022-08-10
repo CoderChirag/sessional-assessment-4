@@ -109,12 +109,75 @@ body {
 	user-select: none;
 	position: relative;
 }
+strong {
+	font-weight: 800;
+	color: var(--color-bold);
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+a[target='_blank'] {
+	cursor: ne-resize;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-skip-ink: auto;
+	color: inherit;
+	position: relative;
+	transition: var(--transition);
+}
+a:hover,
+a:focus {
+	color: var(--color-bold);
+	text-decoration: none;
+}
+p > span.a,
+a.a {
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-skip-ink: auto;
+	position: relative;
+	transition: var(--transition);
+	color: var(--color-bold);
+}
+p > span.a::after,
+a.a::after {
+	content: '';
+	display: block;
+	width: 0px;
+	height: 1px;
+	position: relative;
+	bottom: 0.37em;
+	background-color: var(--color-bold);
+	transition: var(--transition);
+	opacity: 0.5;
+}
 img {
 	width: 100%;
 	max-width: 100%;
 	vertical-align: middle;
 }
-
+svg {
+	fill: currentcolor;
+	vertical-align: middle;
+}
+button {
+	cursor: pointer;
+	border: 0px;
+	border-radius: 0px;
+}
 section {
 	margin: 0px auto;
 	padding: 50px 0px;
@@ -137,7 +200,24 @@ h6 {
 	color: var(--color-secondary);
 	line-height: 1.1;
 }
-
+p:last-child,
+p:last-of-type {
+	margin: 0px;
+}
+p {
+	margin: 0px 0px 15px;
+	font-size: var(--fz-lg);
+}
+p.text-input-error {
+	color: var(--color-input-error);
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0;
+	margin-top: 4px;
+}
+p.support-text {
+	font-size: 12px;
+}
 main {
 	margin: 0px auto;
 	width: 100%;
