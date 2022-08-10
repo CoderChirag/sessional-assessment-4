@@ -1,0 +1,120 @@
+* {
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: #ea5e10 #edb698;
+	font-family: var(--font-sans);
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+::selection {
+	background-color: #ea5e10;
+	color: #f5d1bd;
+}
+:focus,
+a:focus,
+a:active {
+	outline: none;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #ea5e10;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+	background: #edb698;
+}
+a:hover {
+	color: #ea5e10;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #f68141b0;
+}
+strong {
+	color: #ea5e10;
+}
+/* ------------------------------------------------- Nav and Header Section -----------------------------------------------*/
+body,
+.header {
+	background-color: #f4e4db;
+	color: #434343;
+	font-weight: 500;
+}
+.header-sticky,
+.invisible-header {
+	/* background-color: #edb698; */
+	background-color: #f5d1bd;
+}
+.nav-link ol li a {
+	color: #434343;
+}
+.nav .nav-logos span.material-icons-outlined {
+	color: #434343;
+}
+.nav .user-icon a span.material-icons-outlined {
+	color: #434343;
+	transition: color 0.5s ease;
+}
+.nav .user-icon a span.material-icons-outlined:hover {
+	color: #ea5e10;
+}
+/* .nav .material-icons-outlined:hover {
+	color: #ea5e10 !important;
+} */
+.nav-link ol li a:hover {
+	color: #ea5e10;
+}
+.nav-link ol li:not(:last-of-type) a::before {
+	color: #ea5e10;
+	font-weight: 600;
+}
+/* .nav-link ol li svg {
+	color: #ea5e10;
+} */
+.menu .menu-phone-icons .theme-toggle {
+	color: #ea5e10;
+}
+.hamburger .ham-box-inner,
+.hamburger .ham-box-inner::after,
+.hamburger .ham-box-inner::before {
+	background-color: #ea5e10;
+}
+.nav .nav-logos .logo.chitkara {
+	background-image: url('../assets/bg/CU_LOGO_Black.png');
+}
+/* -------------------- Event Gallery Section ------------------ */
+#gallery #spinner-loader-wrapper {
+	background-color: #f4e4db;
+}
+.gradient:before {
+	background: linear-gradient(to bottom, transparent 40%, #edb698 100%);
+}
+
+@media (max-width: 768px) {
+	/* ---------------- Side Menu ------------------ */
+	.menu_StyledSidebar {
+		background-color: #f5d1bd;
+	}
+	.menu_StyledSidebar ol li::before {
+		color: #ea5e10;
+		font-weight: 600;
+	}
+	.menu_StyledSidebar ol li a {
+		color: #434343;
+		font-weight: 600;
+	}
+	.menu_StyledSidebar ol li a:hover {
+		color: #ea5e10;
+	}
+	.hamburger-close .ham-box .ham-box-inner,
+	.hamburger-close .ham-box .ham-box-inner::after,
+	.hamburger-close .ham-box .ham-box-inner::before {
+		background-color: #ea5e10;
+	}
+}

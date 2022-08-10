@@ -143,5 +143,4 @@ function toggleTheme(svg) {
 		}, 0);
 		lightThemeStylesheet.disabled = true;
 	}
-	checkParticle();
 }
