@@ -32,7 +32,7 @@
 	margin: auto;
 }
 .full .content img.landscape {
-	max-width: 70%;
+	max-width: 50%;
 	animation: zoominlandscape 1s ease;
 }
 .full .content img.portrait {

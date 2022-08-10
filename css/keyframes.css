@@ -147,7 +147,7 @@
 /* Gallery Animations */
 @keyframes zoominlandscape {
 	0% {
-		max-width: 20%;
+		max-width: 25%;
 		transform: rotate(-30deg);
 		filter: blur(4px);
 	}
@@ -156,11 +156,11 @@
 		transform: rotate(-80deg);
 	}
 	70% {
-		max-width: 40%;
+		max-width: 35%;
 		transform: rotate(45deg);
 	}
 	100% {
-		max-width: 70%;
+		max-width: 50%;
 		transform: rotate(0deg);
 	}
 }
