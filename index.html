@@ -19,16 +19,165 @@
 </head>
 
 <body>
-	<section id="events-gallery">
-		<div>
-			<h1 class="big-heading" style="margin-bottom: 50px;">Picture Gallery</h2>
-		</div>
-		<div class="gallery" id="gallery">
-			<div id="spinner-loader-wrapper">
-				<div id="spinner-loader"></div>
+	<!-- Header Section -->
+	<div id="root">
+		<header class="nav_StyledHeader header">
+			<nav class="nav">
+				<div class="nav-logos">
+					<div class="logo chitkara fade-enter-done" tabindex="-1">
+						<a href="https://chitkara.edu.in" aria-label="home">
+						</a>
+					</div>
+					<span class="material-icons-outlined" style="margin-right: 10px;">close</span>
+					<div class="logo fade-enter-done" tabindex="-1">
+						<a href="https://www.ieindia.org/webui/iei-home.aspx" aria-label="home">
+							</svg>
+						</a>
+					</div>
+					
+				</div>
+				<div class="nav-link">
+					<ol>
+						<li class="fadedown-enter-done visible slide-down animation-delay delay-pt5"><a href="./index.html">Home</a>
+						<li class="fadedown-enter-done visible slide-down animation-delay delay-1"><a href="./upcoming-events.html">Upcoming
+								Events</a>
+						</li>
+						<li class="fadedown-enter-done visible slide-down animation-delay delay-1pt25"><a href="./past-events.html">Past
+								Events</a></li>
+						<li class="fadedown-enter-done visible slide-down animation-delay delay-1pt5"><a href="./team.html">Team
+								IEI</a>
+						</li>
+						<li class="fadedown-enter-done visible slide-down animation-delay delay-1pt75"><a href="./gallery.html">Events
+								Gallery</a>
+						</li>
+						<li class="fadedown-enter-done visible slide-down animation-delay delay-1pt75"><a href="./leaderboardEvents.html">Leaderboard</a>
+						</li>
+						<li class="fadedown-enter-done visible slide-down animation-delay delay-2"><a href="./contact.html">Contact</a>
+						</li>
+						<li class="fadedown-enter-done user-icon visible slide-down animation-delay delay-2pt25">
+							<a href="">
+								<span class="material-icons-outlined">
+									account_circle
+								</span>
+							</a>
+							<svg class="theme-toggle d-none" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" color="#64ffda" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" style="cursor: pointer; transform: rotate(90deg); margin-right: 16px;" onclick="toggleTheme(this)">
+								<mask id="myMask1">
+									<rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+									<circle style="cx: 100%; cy: 0px;" r="9" fill="black"></circle>
+								</mask>
+								<circle cx="12" cy="12" fill="#64ffda" style="r: 5px;" mask="url(#myMask1)">
+								</circle>
+								<g stroke="currentColor" style="opacity: 1;">
+									<line x1="12" y1="1" x2="12" y2="3"></line>
+									<line x1="12" y1="21" x2="12" y2="23"></line>
+									<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+									<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+									<line x1="1" y1="12" x2="3" y2="12"></line>
+									<line x1="21" y1="12" x2="23" y2="12"></line>
+									<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+									<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+								</g>
+							</svg>
+							<svg class="theme-toggle d-none" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" color="#ea5e10" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" style="cursor: pointer; transform: rotate(40deg); margin-top: -5px; margin-right: 16px; color: transparent;" onclick="toggleTheme(this)">
+								<mask id="myMask2">
+									<rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+									<circle style="cx: 50%; cy: 23%;" r="9" fill="black"></circle>
+								</mask>
+								<circle cx="12" cy="12" fill="#ea5e10" style="r: 9px;" mask="url(#myMask2)">
+								</circle>
+								<g stroke="currentColor" style="opacity: 0;">
+									<line x1="12" y1="1" x2="12" y2="3"></line>
+									<line x1="12" y1="21" x2="12" y2="23"></line>
+									<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+									<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+									<line x1="1" y1="12" x2="3" y2="12"></line>
+									<line x1="21" y1="12" x2="23" y2="12"></line>
+									<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+									<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+								</g>
+							</svg>
+						</li>
+					</ol>
+				</div>
+				<div class="menu fade-enter-done">
+					<div class="menu-phone-icons">
+						<svg class="theme-toggle d-none" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" color="#64ffda" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" style="cursor: pointer; transform: rotate(90deg); margin-right: 16px;" onclick="toggleTheme(this)">
+							<mask id="myMask3">
+								<rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+								<circle style="cx: 100%; cy: 0px;" r="9" fill="black"></circle>
+							</mask>
+							<circle cx="12" cy="12" fill="#64ffda" style="r: 5px;" mask="url(#myMask3)"></circle>
+							<g stroke="currentColor" style="opacity: 1;">
+								<line x1="12" y1="1" x2="12" y2="3"></line>
+								<line x1="12" y1="21" x2="12" y2="23"></line>
+								<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+								<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+								<line x1="1" y1="12" x2="3" y2="12"></line>
+								<line x1="21" y1="12" x2="23" y2="12"></line>
+								<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+								<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+							</g>
+						</svg>
+						<svg class="theme-toggle d-none" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" color="#ea5e10" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" style="cursor: pointer; transform: rotate(40deg); margin-top: -5px; margin-right: 16px; color: transparent;" onclick="toggleTheme(this)">
+							<mask id="myMask4">
+								<rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+								<circle style="cx: 50%; cy: 23%;" r="9" fill="black"></circle>
+							</mask>
+							<circle cx="12" cy="12" fill="#ea5e10" style="r: 9px;" mask="url(#myMask4)"></circle>
+							<g stroke="currentColor" style="opacity: 0;">
+								<line x1="12" y1="1" x2="12" y2="3"></line>
+								<line x1="12" y1="21" x2="12" y2="23"></line>
+								<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+								<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+								<line x1="1" y1="12" x2="3" y2="12"></line>
+								<line x1="21" y1="12" x2="23" y2="12"></line>
+								<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+								<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+							</g>
+						</svg>
+						<button aria-label="Menu" class="hamburger" onclick="toggleMenubar(this)">
+							<div class="ham-box">
+								<div class="ham-box-inner"></div>
+							</div>
+						</button>
+						<aside aria-hidden="true" tabindex="-1" class="menu_StyledSidebar menubar">
+							<nav>
+								<ol>
+									<li><a href="./index.html">Home</a></li>
+									<li><a href="./upcoming-events.html">Upcoming Events</a>
+									</li>
+									<li><a href="./past-events.html">Past Events</a></li>
+									<li><a href="./team.html">Team IEI</a>
+									</li>
+									<li><a href="#">Events Gallery</a></li>
+									<li><a href="./leaderboardEvents.html">Leaderboard</a></li>
+									<li><a href="./contact.html">Contact</a>
+									</li>
+									<li class="user-icon">
+										<a href="">
+											<span class="material-icons-outlined">
+												account_circle
+											</span>
+										</a>
+									</li>
+								</ol>
+							</nav>
+						</aside>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section id="events-gallery">
+			<div>
+				<h1 class="big-heading" style="margin-bottom: 50px;">Picture Gallery</h2>
 			</div>
-		</div>
-	</section>
+			<div class="gallery" id="gallery">
+				<div id="spinner-loader-wrapper">
+					<div id="spinner-loader"></div>
+				</div>
+			</div>
+		</section>
+	</div>
 	<script src="./js/index.js"></script>
 </body>
 
