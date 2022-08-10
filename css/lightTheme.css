@@ -96,6 +96,33 @@ body,
 	background: linear-gradient(to bottom, transparent 40%, #edb698 100%);
 }
 
+/* ----------------------------------- Sidebars Section ----------------------------- */
+.yt-sidebar path {
+	fill: #ea5e10;
+}
+.yt-sidebar:hover path {
+	fill: #ea5e10;
+}
+.separator {
+	background-color: #434343;
+}
+.right-bar-div a {
+	font-size: var(--fz-xs);
+}
+.right-bar-div:after {
+	height: 55px;
+	background-color: #ea5e10;
+}
+.right-bar,
+.left-bar {
+	color: #ea5e10;
+}
+
+.left-bar-ol:after {
+	height: 100px;
+	background-color: #ea5e10;
+}
+
 @media (max-width: 768px) {
 	/* ---------------- Side Menu ------------------ */
 	.menu_StyledSidebar {
