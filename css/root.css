@@ -109,6 +109,15 @@ body {
 	user-select: none;
 	position: relative;
 }
+body.blur {
+	overflow: hidden;
+}
+body.blur #content > * {
+	filter: blur(5px) brightness(0.7);
+	transition: var(--transition);
+	pointer-events: none;
+	user-select: none;
+}
 strong {
 	font-weight: 800;
 	color: var(--color-bold);
