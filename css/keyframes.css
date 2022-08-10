@@ -143,3 +143,107 @@
 		transform: rotate(359deg);
 	}
 }
+
+/* Gallery Animations */
+@keyframes zoominlandscape {
+	0% {
+		max-width: 20%;
+		transform: rotate(-30deg);
+		filter: blur(4px);
+	}
+	30% {
+		filter: blur(4px);
+		transform: rotate(-80deg);
+	}
+	70% {
+		max-width: 40%;
+		transform: rotate(45deg);
+	}
+	100% {
+		max-width: 70%;
+		transform: rotate(0deg);
+	}
+}
+@keyframes zoominportrait {
+	0% {
+		max-width: 10%;
+		transform: rotate(-30deg);
+		filter: blur(4px);
+	}
+	30% {
+		filter: blur(4px);
+		transform: rotate(-80deg);
+	}
+	70% {
+		max-width: 20%;
+		transform: rotate(45deg);
+	}
+	100% {
+		max-width: 30%;
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes moveUp {
+	0% {
+		bottom: -200px;
+		opacity: 0;
+	}
+	100% {
+		bottom: 0px;
+		opacity: 1;
+	}
+}
+@keyframes moveDown {
+	0% {
+		top: -60px;
+		opacity: 0;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+@media (max-width: 1080px) {
+	@keyframes zoominportrait {
+		0% {
+			max-width: 25%;
+			transform: rotate(-30deg);
+			filter: blur(4px);
+		}
+		30% {
+			filter: blur(4px);
+			transform: rotate(-80deg);
+		}
+		70% {
+			max-width: 30%;
+			transform: rotate(45deg);
+		}
+		100% {
+			max-width: 80%;
+			transform: rotate(0deg);
+		}
+	}
+}
+@media (max-width: 415px) {
+	@keyframes zoominlandscape {
+		0% {
+			max-width: 50%;
+			transform: rotate(-30deg);
+			filter: blur(4px);
+		}
+		30% {
+			filter: blur(4px);
+			transform: rotate(-80deg);
+		}
+		70% {
+			max-width: 50%;
+			transform: rotate(45deg);
+		}
+		100% {
+			max-width: 100%;
+			transform: rotate(0deg);
+		}
+	}
+}
