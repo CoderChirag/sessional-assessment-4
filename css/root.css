@@ -283,6 +283,9 @@ main.fillHeight {
 	main.fillHeight {
 		padding: 0px 25px;
 	}
+	.big-heading {
+		font-size: 2rem;
+	}
 }
 @media (max-width: 415px) {
 	section {

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+#events-gallery {
+	margin-top: 80px;
+}
 #footer-text {
 	width: 100%;
 	position: absolute;
@@ -138,6 +141,9 @@
 	.full .content img.portrait {
 		max-width: 80%;
 	}
+	#gallery {
+		padding: 0 40px;
+	}
 }
 @media (max-width: 768px) {
 	section {
@@ -148,6 +154,9 @@
 	}
 	.full .content img.landscape {
 		max-width: 80%;
+	}
+	#gallery {
+		padding: 0 50px;
 	}
 }
 @media (max-width: 600px) {
@@ -176,6 +185,9 @@
 	#footer-text.team {
 		margin-top: 0px !important;
 		bottom: 2px;
+	}
+	#gallery {
+		padding: 0 30px;
 	}
 }
 @media (max-width: 415px) {
